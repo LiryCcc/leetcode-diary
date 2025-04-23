@@ -26,8 +26,7 @@ function solution(n: number): number {
 
 describe('对拍', () => {
   it('和原题一致', () => {
-    // 原题最大10000
-    for (let i = 1; i <= 10000; i++) {
+    for (let i = 1; i <= 1000000; i++) {
       expect(solution(i)).toBe(countLargestGroup(i));
     }
   });
