@@ -25,7 +25,8 @@ function solution(n: number): number {
 }
 
 describe('对拍', () => {
-  for (let i = 1; i <= 1000000; i++) {
+  // 原题最大10000
+  for (let i = 1; i <= 10000; i++) {
     new Promise<void>((resolve) => {
       expect(solution(i)).toBe(countLargestGroup(i));
       resolve();
