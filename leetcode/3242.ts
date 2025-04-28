@@ -16,7 +16,6 @@ const dirs = [
 class NeighborSum {
   private grid: number[][];
   private pos: { [key: number]: [number, number] };
-  private dirs: [number, number][][];
   constructor(grid: number[][]) {
     this.grid = grid;
     this.pos = {};
@@ -48,3 +47,5 @@ class NeighborSum {
     return sum;
   }
 }
+
+export default NeighborSum;

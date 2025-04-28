@@ -9,3 +9,5 @@ const destCity = (paths) => {
     }
   }
 };
+
+export default destCity;

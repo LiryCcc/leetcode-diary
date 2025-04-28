@@ -11,3 +11,5 @@ const singleNonDuplicate = (nums: number[]): number => {
   }
   return nums[low];
 };
+
+export default singleNonDuplicate;

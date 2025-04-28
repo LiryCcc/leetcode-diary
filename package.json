@@ -3,16 +3,25 @@
   "scripts": {
     "check-format": "prettier --check --cache .",
     "format": "prettier --write --cache .",
-    "lint": "pnpm check-format",
+    "lint": "pnpm check-format && pnpm lint-code",
+    "lint-code": "eslint --cache .",
+    "lint-fix": "eslint --fix .",
     "test": "vitest run --coverage",
     "tn": "ts-node"
   },
+  "dependencies": {
+    "datastructures-js": "^13.0.0"
+  },
   "devDependencies": {
+    "@eslint/js": "^9.25.1",
     "@vitest/coverage-v8": "3.1.1",
+    "eslint": "^9.25.1",
+    "globals": "^16.0.0",
     "prettier": "^3.5.3",
     "prettier-plugin-organize-imports": "^4.1.0",
     "prettier-plugin-packagejson": "^2.5.10",
     "ts-node": "^10.9.2",
+    "typescript-eslint": "^8.31.0",
     "vitest": "^3.1.1"
   }
 }

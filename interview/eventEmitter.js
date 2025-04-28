@@ -39,3 +39,5 @@ class EventEmitter {
     return this;
   }
 }
+
+export default EventEmitter;

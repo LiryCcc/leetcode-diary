@@ -2,8 +2,8 @@ import { describe, expect, it } from 'vitest';
 import countInterestingSubarrays from './2845';
 
 function solution(nums: number[], modulo: number, k: number): number {
-  let n = nums.length;
-  let cnt = new Map<number, number>();
+  const n = nums.length;
+  const cnt = new Map<number, number>();
   let res = 0;
   let prefix = 0;
   cnt.set(0, 1);

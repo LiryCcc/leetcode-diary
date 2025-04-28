@@ -27,3 +27,5 @@ const minOperations = (nums: number[]) => {
   }
   return numOp;
 };
+
+export default minOperations;

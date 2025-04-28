@@ -19,3 +19,5 @@ const partition = (arr, left, right) => {
   [arr[i + 1], arr[right]] = [arr[right], arr[i + 1]];
   return i + 1;
 };
+
+quickSort([5, 4, 3, 2, 1]);

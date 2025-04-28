@@ -20,3 +20,5 @@ const minChanges = (n: number, k: number) => {
     return c;
   }
 };
+
+export default minChanges;

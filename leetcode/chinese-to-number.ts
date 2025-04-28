@@ -1,6 +1,6 @@
 const c = ['一亿三千五百六十四万九千六百三十二'];
 
-const n = ['亿', '万', '千', '百', '十'];
+const _n = ['亿', '万', '千', '百', '十'];
 const d = ['零', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
 
 const chineseToNumber = (str: string): number => {

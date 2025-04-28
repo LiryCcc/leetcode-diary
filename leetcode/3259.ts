@@ -11,3 +11,5 @@ const maxEnergyBoost = (a: number[], b: number[]) => {
   }
   return Math.max(d[n][0], d[n][1]);
 };
+
+export default maxEnergyBoost;

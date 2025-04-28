@@ -42,7 +42,8 @@ function countSubarrays(nums: number[]): number {
     if (nums[f] + nums[l] == nums[f - 1] / 2) {
       sum++;
     }
-    l++, f++;
+    l++;
+    f++;
   }
   return sum;
 }

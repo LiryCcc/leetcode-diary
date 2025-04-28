@@ -2,8 +2,8 @@ function twoSum(nums: number[], target: number): number[] {
   const map = new Map();
   const len = nums.length;
   for (let i = 0; i < len; i++) {
-    let num = nums[i];
-    let prevIndex = map.get(target - num);
+    const num = nums[i];
+    const prevIndex = map.get(target - num);
     if (prevIndex !== null) {
       return [prevIndex, i];
     }
@@ -11,3 +11,5 @@ function twoSum(nums: number[], target: number): number[] {
   }
   return [-1, -1];
 }
+
+export default twoSum;

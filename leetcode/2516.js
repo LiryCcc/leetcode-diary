@@ -32,3 +32,5 @@ const takeCharacters = (s, k) => {
     }
   }
 };
+
+export default takeCharacters;

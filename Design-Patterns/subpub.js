@@ -3,3 +3,5 @@ class SubPub {
     this.msg = {};
   }
 }
+
+export default SubPub;

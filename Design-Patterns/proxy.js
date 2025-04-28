@@ -19,3 +19,5 @@ class StarProxy {
 setTimeout(() => {
   console.log('time out');
 }, 10000000);
+
+export default StarProxy;

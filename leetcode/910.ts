@@ -10,3 +10,5 @@ const smallestRangeII = (nums: number[], k: number) => {
   }
   return res;
 };
+
+export default smallestRangeII;

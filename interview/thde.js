@@ -20,3 +20,5 @@ const debounce = (fn, time) => {
     }, time);
   };
 };
+
+export { debounce, throttle };

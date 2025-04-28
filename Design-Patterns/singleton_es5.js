@@ -1,5 +1,5 @@
 const Singleton = (() => {
-  const instance = null;
+  let instance = null;
   function User(name, age) {
     this.name = name;
     this.age = age;

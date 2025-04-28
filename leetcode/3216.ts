@@ -9,4 +9,4 @@ function getSmallestString(s: string) {
   }
 }
 
-console.log('001');
+export default getSmallestString;

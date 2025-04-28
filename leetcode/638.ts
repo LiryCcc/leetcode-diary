@@ -47,3 +47,5 @@ const shoppingOffers = (p: number[], s: number[][], ns: number[]) => {
 
   return dfs(p, s, ns, fSp, n);
 };
+
+export default shoppingOffers;

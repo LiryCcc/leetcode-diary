@@ -5,7 +5,7 @@ const solution = function (differences: number[], lower: number, upper: number):
   let x = 0,
     y = 0,
     cur = 0;
-  for (let d of differences) {
+  for (const d of differences) {
     cur += d;
     x = Math.min(x, cur);
     y = Math.max(y, cur);
@@ -20,7 +20,7 @@ const random = () => {
   return Math.floor(Math.random() * 100000);
 };
 
-const randomArray = (length: number, lower: number, upper: number): number[] => {
+const randomArray = (length: number, _lower: number, _upper: number): number[] => {
   const arr = [];
   for (let i = 0; i < length; i++) {
     arr.push(random());

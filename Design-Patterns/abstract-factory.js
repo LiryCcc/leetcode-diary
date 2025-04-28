@@ -61,4 +61,4 @@ function getAbstractUserFactory(role) {
 }
 let UserClass = getAbstractUserFactory('editor');
 // console.log(UserClass)
-let user = new UserClass('liry');
+let _user = new UserClass('liry');

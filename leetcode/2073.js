@@ -15,3 +15,5 @@ const timeRequiredToBuy = (tickets, k) => {
   }
   return ans;
 };
+
+export default timeRequiredToBuy;

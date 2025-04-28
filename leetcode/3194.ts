@@ -4,7 +4,7 @@ const minimumAverage = (nums: number[]) => {
   });
   const ave: number[] = [];
   while (nums.length > 0) {
-    ave.push((nums.pop() + nums.shift()) / 2);
+    ave.push((nums.pop()! + nums.shift()!) / 2);
   }
   ave.sort((a, b) => {
     return b - a;
@@ -12,3 +12,5 @@ const minimumAverage = (nums: number[]) => {
 
   return ave.pop();
 };
+
+export default minimumAverage;

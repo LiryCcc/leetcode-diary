@@ -3,7 +3,7 @@ import countCompleteSubarrays from './2799';
 
 function solution(nums: number[]): number {
   let res = 0;
-  let cnt = new Map<number, number>();
+  const cnt = new Map<number, number>();
   const n = nums.length;
   let right = 0;
   const distinct = new Set(nums).size;

@@ -20,3 +20,5 @@ const numberOfPairs = (nums1, nums2, k) => {
   }
   return r;
 };
+
+export default numberOfPairs;

@@ -1,4 +1,4 @@
-class sub {
+class Sub {
   constructor() {
     this.observers = [];
   }
@@ -10,3 +10,5 @@ class sub {
   }
   notify() {}
 }
+
+export default Sub;

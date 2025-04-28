@@ -51,3 +51,5 @@ function idealArrays(n: number, maxValue: number): number {
   }
   return ans;
 }
+
+export default idealArrays;

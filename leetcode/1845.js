@@ -38,6 +38,8 @@
  * 对 reserve 和 unreserve 的调用 总共 不超过 105 次。
  */
 
+import { MinPriorityQueue } from 'datastructures-js';
+
 class SeatManager {
   constructor(num) {
     this.a = new MinPriorityQueue();
@@ -54,3 +56,5 @@ class SeatManager {
     this.a.enqueue(seat - 1);
   }
 }
+
+export default SeatManager;

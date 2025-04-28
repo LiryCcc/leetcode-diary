@@ -1,4 +1,4 @@
-let superEggDrop = (K, N) => {
+const superEggDrop = (K, N) => {
   let dp = Array(K + 1).fill(0);
   let cnt = 0;
   while (dp[K] < N) {
@@ -9,3 +9,5 @@ let superEggDrop = (K, N) => {
   }
   return cnt;
 };
+
+export default superEggDrop;

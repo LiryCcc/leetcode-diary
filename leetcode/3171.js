@@ -24,8 +24,7 @@ const minimumDifference = (n, k) => {
     }
 
     ptb.sort((a, b) => b[0] - a[0]);
-    let val = 0,
-      j = 0;
+    let val = 0;
     for (let j = 0, p = 0; j < ptb.length; p = j) {
       while (j < ptb.length && ptb[j][0] === ptb[p][0]) {
         val |= 1 << ptb[j][1];
@@ -36,3 +35,5 @@ const minimumDifference = (n, k) => {
   }
   return r;
 };
+
+export default minimumDifference;
