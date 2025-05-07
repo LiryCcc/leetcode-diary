@@ -13,7 +13,9 @@ function solution(nums: number[]): number[] {
 
 describe('与题解一致', () => {
   it('test', () => {
-    const arr = generateRandomArray(100, 0, 100);
-    expect(solution(arr)).toEqual(buildArray(arr));
+    for (let i = 0; i < 100; i++) {
+      const arr = generateRandomArray(100, 0, 100);
+      expect(solution(arr)).toEqual(buildArray(arr));
+    }
   });
 });
