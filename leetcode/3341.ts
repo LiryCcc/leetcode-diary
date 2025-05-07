@@ -7,7 +7,7 @@ function minTimeToReach(moveTime: number[][]): number {
     dist: number;
   }
   const [n, m] = [moveTime.length, moveTime[0].length];
-  const distance: number[][] = Array.from({ length: n }, () => Array(m).fill(1919810));
+  const distance: number[][] = Array.from({ length: n }, () => Array(m).fill(1145141919810));
   const v: number[][] = Array.from({ length: n }, () => Array(m).fill(0));
   const directions = [
     [1, 0],
