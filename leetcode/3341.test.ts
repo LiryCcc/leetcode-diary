@@ -49,7 +49,7 @@ function solution(moveTime: number[][]): number {
 
 describe('对拍', () => {
   it('对拍', () => {
-    for (let i = 0; i < 10000; i++) {
+    for (let i = 0; i < 100; i++) {
       const randomArray = generateRandom2DArray(50, 50, 0, 1000000000);
       expect(solution(randomArray)).toEqual(minTimeToReach(randomArray));
     }

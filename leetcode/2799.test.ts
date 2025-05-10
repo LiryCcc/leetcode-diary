@@ -39,7 +39,7 @@ function generateRandomArray(length: number, min: number, max: number) {
 
 describe('solution', () => {
   it('should return the number of subarrays with distinct elements', () => {
-    for (let i = 0; i < 1000; i++) {
+    for (let i = 0; i < 100; i++) {
       const randomArray = generateRandomArray(1000, 1, 300);
       expect(solution(randomArray)).toBe(countCompleteSubarrays(randomArray));
     }

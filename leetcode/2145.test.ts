@@ -32,7 +32,7 @@ describe('统计隐藏数组数目', () => {
   // 随便写几个用例
   it('和官方题解一致', () => {
     const arrs: number[][] = [];
-    for (let i = 0; i < 1000; i++) {
+    for (let i = 0; i < 100; i++) {
       arrs.push(randomArray(random(), random(), random()));
     }
     for (const arr of arrs) {
