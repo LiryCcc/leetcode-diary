@@ -10,7 +10,8 @@
     "tn": "ts-node"
   },
   "dependencies": {
-    "datastructures-js": "^13.0.0"
+    "datastructures-js": "^13.0.0",
+    "dayjs": "^1.11.13"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.1",
