@@ -1,15 +1,32 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "ESNext",
+    "module": "esnext",
+    "noEmit": true,
+    "lib": ["ESNext", "DOM"],
     "moduleResolution": "bundler",
     "isolatedModules": true,
-    "allowJs": true,
-    "resolveJsonModule": true,
-    "noEmit": true,
     "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+    "strictBindCallApply": true,
+    "strictBuiltinIteratorReturn": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "alwaysStrict": true,
+    "target": "ESNext",
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "allowJs": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "@@/*": ["./*"]
+    },
     "skipLibCheck": true
   },
   "include": ["./**/*.ts", "./**/*.js"]
