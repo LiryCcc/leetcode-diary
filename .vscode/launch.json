@@ -8,6 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
+      "runtimeArgs": ["--experimental-transform-types"],
       "skipFiles": ["<node_internals>/**"],
       "program": "${file}"
     }
