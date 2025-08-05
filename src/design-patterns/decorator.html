@@ -6,7 +6,7 @@
     <title>Document</title>
   </head>
   <body>
-    <button id="film-btn">万里归途</button>
+    <button id="btn">万里归途</button>
     <script>
       Function.prototype.before = function (beforeFn) {
         const _this = this;
@@ -35,7 +35,7 @@
 
       render = render.before(log);
 
-      filmbtn.onclick = function () {
+      document.getElementById('btn').onclick = function () {
         render();
       };
     </script>
