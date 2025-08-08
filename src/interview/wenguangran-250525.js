@@ -1,7 +1,9 @@
 import dayjs from 'dayjs';
+import { exit } from 'node:process';
+
 const s = dayjs();
-for (let i = 1; i < 1000000; i++) {
-  for (let j = 1; j < 1000000; j++) {
+for (let i = 1; i < 10000n; i++) {
+  for (let j = 1; j < i; j++) {
     if (79 * (i + j) === 8 * i * j) {
       console.log(i, ' ', j);
       break;
@@ -12,3 +14,5 @@ for (let i = 1; i < 1000000; i++) {
 const e = dayjs();
 
 console.log(e.diff(s, 'ms'));
+console.log('exit');
+exit('x');
