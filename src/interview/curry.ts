@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 type UnknownFunction = (...args: unknown[]) => unknown | UnknownFunction;
 
 const curry = (fn: UnknownFunction) => {
@@ -17,6 +18,7 @@ const sum = (a: number, b: number, c: number, d: number) => {
   return a + b + c + d;
 };
 
+// @ts-expect-error
 console.log(curry(sum)(1)(2)(3)(4));
 
 export default curry;
