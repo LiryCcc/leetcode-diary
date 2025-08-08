@@ -14,23 +14,37 @@ const transferPathArrayToPathTree = (cases: string[]): PathTree => {
     .map((v) => v.split('/'))
     .map((v) => {
       if (v[0] === '') {
-        return ['/', ...v.slice(1)];
+        return v.slice(1);
       } else {
         return v;
       }
     });
-  out(formatCases);
-  const res: PathTree = { name: '/' };
-  formatCases.forEach((v) => {
-    if (res.children) {
-      //
-    } else {
-      res.children = [];
-    }
+  // [["/","a","b","c"],["/","a","b","c","d"],["/","a","b","d"],["/","a","c"]]
+  const res: PathTree = { name: '/', children: [] };
+
+  formatCases.forEach((seg) => {
+    let root = res;
+    seg.forEach((s) => {
+      if (root.children) {
+        const newRoot = root.children.filter((v) => {
+          return v.name === s;
+        })[0];
+        if (newRoot) {
+          root = newRoot;
+        } else {
+          const leaf = { name: s, children: [] } as PathTree;
+          root.children.push(leaf);
+          root = leaf;
+        }
+      } else {
+        root.children = [] as PathTree[];
+      }
+    });
   });
+  // const res: PathTree = { name: '/' };
   return res;
 };
 
-transferPathArrayToPathTree(testCase);
+out(transferPathArrayToPathTree(testCase));
 
 export default transferPathArrayToPathTree;
