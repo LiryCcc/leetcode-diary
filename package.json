@@ -3,9 +3,9 @@
   "scripts": {
     "check-format": "prettier --check --cache .",
     "format": "prettier --write --cache .",
-    "lint": "pnpm check-format && pnpm lint-code",
+    "lint": "pnpm check-format && pnpm lint-code && pnpm lint-style",
     "lint-code": "eslint --cache .",
-    "lint-fix": "eslint --fix .",
+    "lint-style": "stylelint src/**/*.css",
     "test": "vitest run --coverage",
     "tn": "ts-node"
   },
@@ -26,6 +26,8 @@
     "radash": "^12.1.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "stylelint": "^16.23.1",
+    "stylelint-config-standard": "^39.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.38.0",
