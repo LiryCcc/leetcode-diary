@@ -3,8 +3,9 @@
   "scripts": {
     "check-format": "prettier --check --cache .",
     "format": "prettier --write --cache .",
-    "lint": "pnpm check-format && pnpm lint-code && pnpm lint-style",
+    "lint": "pnpm check-format && pnpm lint-code && pnpm lint-style && pnpm lint-spell",
     "lint-code": "eslint --cache .",
+    "lint-spell": "cspell .",
     "lint-style": "stylelint src/**/*.css",
     "test": "vitest run --coverage",
     "tn": "ts-node"
@@ -18,6 +19,7 @@
     "@types/react": "^19.1.9",
     "@types/react-dom": "^19.1.7",
     "@vitest/coverage-v8": "3.2.4",
+    "cspell": "^9.2.0",
     "eslint": "^9.32.0",
     "globals": "^16.3.0",
     "prettier": "^3.6.2",

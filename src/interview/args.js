@@ -1,4 +1,4 @@
-const cargs = (...args) => {
+const logArgs = (...args) => {
   console.dir(...args);
 };
-cargs(1, 2, 3);
+logArgs(1, 2, 3);

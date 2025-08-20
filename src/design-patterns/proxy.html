@@ -9,17 +9,17 @@
     <script>
       const star = {
         name: '11',
-        workprice: 10000
+        workPrice: 10000
       };
       const proxy = new Proxy(star, {
         get(target, key) {
-          if (key === 'workprice') {
+          if (key === 'workPrice') {
             console.log('can');
           }
           return target[key];
         },
         set(target, key, value) {
-          if (key === 'workprice') {
+          if (key === 'workPrice') {
             console.log('set');
             if (value > 10000) {
               console.log('can');

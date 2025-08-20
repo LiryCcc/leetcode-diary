@@ -6,7 +6,7 @@ class Sub {
     this.observers.push(observer);
   }
   remove(observer) {
-    this.boservers = this.observers.filter((o) => o !== observer);
+    this.observers = this.observers.filter((o) => o !== observer);
   }
   notify() {}
 }
