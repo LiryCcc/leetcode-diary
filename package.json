@@ -7,8 +7,12 @@
     "lint-code": "eslint --cache .",
     "lint-spell": "cspell .",
     "lint-style": "stylelint src/**/*.css",
+    "prepare": "simple-git-hooks",
     "test": "vitest run --coverage",
     "tn": "ts-node"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint"
   },
   "dependencies": {
     "datastructures-js": "^13.0.0",
@@ -28,6 +32,7 @@
     "radash": "^12.1.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "simple-git-hooks": "^2.13.1",
     "stylelint": "^16.23.1",
     "stylelint-config-standard": "^39.0.0",
     "ts-node": "^10.9.2",
