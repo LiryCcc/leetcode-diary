@@ -32,18 +32,24 @@ premium lock icon
  */
 
 function longestConsecutive(nums: number[]): number {
+  if (nums.length === 0) {
+    return 0;
+  }
   const map: Record<number, boolean> = {};
   for (const num of nums) {
     map[num] = true;
   }
+  const _nums = Object.keys(map).map((v) => parseInt(v));
   let res = 1;
-  for (let num of nums) {
-    let _ = 0;
-    while (map[num]) {
-      _++;
-      num++;
+  for (let num of _nums) {
+    if (!map[num - 1]) {
+      let len = 0;
+      while (map[num]) {
+        len++;
+        num++;
+      }
+      res = Math.max(res, len);
     }
-    res = Math.max(res, _);
   }
   return res;
 }
