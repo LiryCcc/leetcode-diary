@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import buildArray from './1920';
-import { generateRandomArray } from './utils';
+import buildArray from './1920.ts';
+import { generateRandomArray } from './utils.ts';
 
 function solution(nums: number[]): number[] {
   const n = nums.length;

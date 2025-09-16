@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import countSubarrays from './3392';
-import { generateRandomArray } from './utils';
+import countSubarrays from './3392.ts';
+import { generateRandomArray } from './utils.ts';
 
 function solution(nums: number[]): number {
   const n = nums.length;

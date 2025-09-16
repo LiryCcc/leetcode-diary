@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import minimumArea from './3195';
-import { generateRandom2DArray } from './utils';
+import minimumArea from './3195.ts';
+import { generateRandom2DArray } from './utils.ts';
 
 function solution(grid: number[][]): number {
   const n = grid.length,

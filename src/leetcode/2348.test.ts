@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import zeroFilledSubarray from './2348';
+import zeroFilledSubarray from './2348.ts';
 
 const generateArr = (length: number): number[] => {
   const res: number[] = [];

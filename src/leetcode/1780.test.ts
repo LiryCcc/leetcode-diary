@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import checkPowersOfThree from './1780';
+import checkPowersOfThree from './1780.ts';
 
 describe('1780', () => {
   it('官方case1', () => {

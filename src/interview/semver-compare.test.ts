@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import versionCompare from './semver-compare';
+import versionCompare from './semver-compare.ts';
 
 describe('semver compare', () => {
   // --- 基本功能测试 ---

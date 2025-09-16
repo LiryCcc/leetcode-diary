@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import createCounter from './create-counter'; // 确保路径正确
+import createCounter from './create-counter.ts'; // 确保路径正确
 
 describe('createCounter', () => {
   it('应该使用默认值 0 进行初始化', () => {

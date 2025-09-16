@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import countLargestGroup from './1339';
+import countLargestGroup from './1339.ts';
 
 function solution(n: number): number {
   const hashMap: { [key: number]: number } = {};

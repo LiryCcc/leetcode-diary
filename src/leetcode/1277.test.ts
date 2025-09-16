@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import countSquares from './1277';
+import countSquares from './1277.ts';
 
 function solution(matrix: number[][]): number {
   const m = matrix.length,

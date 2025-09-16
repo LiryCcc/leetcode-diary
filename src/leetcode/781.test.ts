@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import numRabbits from './781';
+import numRabbits from './781.ts';
 
 // 这是题解代码
 function solution(answers: number[]): number {

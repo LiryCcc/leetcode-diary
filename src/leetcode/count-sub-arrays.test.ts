@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import countSubArrays from './count-sub-arrays';
+import countSubArrays from './count-sub-arrays.ts';
 function solution(nums: number[], minK: number, maxK: number): number {
   let ans = 0,
     minI = -1,

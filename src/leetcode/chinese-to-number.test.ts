@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import c from './chinese-to-number';
+import c from './chinese-to-number.ts';
 
 describe('chineseToNumber', () => {
   it('should convert Chinese numerals to numbers', () => {
