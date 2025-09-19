@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import countInterestingSubarrays from './2845';
+import countInterestingSubarrays from './2845.ts';
 
 function solution(nums: number[], modulo: number, k: number): number {
   const n = nums.length;

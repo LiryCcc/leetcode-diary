@@ -5,7 +5,7 @@ import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 const eslintConfig = defineConfig([
-  globalIgnores(['.github', '.idea', '.vscode', 'coverage']),
+  globalIgnores(['.github', '.idea', '.vscode', 'coverage', 'dist']),
   {
     rules: {
       // 添加这个规则配置，让以_开头的变量不报未使用错误

@@ -12,8 +12,8 @@ class User {
   }
   static UserFactory = (role) => {
     switch (role) {
-      case 'superadmin':
-        return new User('superadmin', ['home', 1, 2, 3]);
+      case 'superAdmin':
+        return new User('superAdmin', ['home', 1, 2, 3]);
       case 'admin':
         return new User('admin', ['home', 1, 2, 3]);
       case 'user':

@@ -1,7 +1,7 @@
 import { PriorityQueue } from 'datastructures-js';
 import { describe, expect, it } from 'vitest';
-import minTimeToReach from './3341';
-import { generateRandom2DArray } from './utils';
+import minTimeToReach from './3341.ts';
+import { generateRandom2DArray } from './utils.ts';
 
 interface State {
   x: number;

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import countCompleteSubarrays from './2799';
+import countCompleteSubarrays from './2799.ts';
 
 function solution(nums: number[]): number {
   let res = 0;

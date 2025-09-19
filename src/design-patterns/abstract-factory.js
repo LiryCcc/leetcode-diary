@@ -15,10 +15,10 @@ class User {
 
 class SuperAdmin extends User {
   constructor(name) {
-    super(name, 'superadmin', ['home', 1, 2, 3]);
+    super(name, 'superAdmin', ['home', 1, 2, 3]);
   }
   dataShow() {
-    console.log('superadmin-dataShow');
+    console.log('superAdmin-dataShow');
   }
   addRight() {}
   addUser() {}
@@ -48,7 +48,7 @@ class Editor extends User {
  */
 function getAbstractUserFactory(role) {
   switch (role) {
-    case 'superadmin':
+    case 'superAdmin':
       return SuperAdmin;
     case 'admin':
       return Admin;

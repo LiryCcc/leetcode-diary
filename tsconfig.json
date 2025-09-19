@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
-    "module": "esnext",
+    "module": "NodeNext",
     "outDir": "./dist",
     "rootDir": "./src",
     "target": "ESNext",
     "lib": ["ESNext", "DOM"],
-    "moduleResolution": "bundler",
+    "moduleResolution": "NodeNext",
     "isolatedModules": true,
     "esModuleInterop": true,
     "resolveJsonModule": true,
@@ -13,10 +13,13 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "strictBindCallApply": true,
     "strictBuiltinIteratorReturn": true,
+    "types": ["node"],
     "strictFunctionTypes": true,
     "strictPropertyInitialization": true,
     "alwaysStrict": true,
@@ -27,6 +30,6 @@
     "paths": {},
     "skipLibCheck": true
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"]
+  "include": ["src/**/*.ts", "src/**/*.js"],
+  "exclude": ["node_modules"]
 }

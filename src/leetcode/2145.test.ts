@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import numberOfArrays from './2145';
+import numberOfArrays from './2145.ts';
 
 const solution = function (differences: number[], lower: number, upper: number): number {
   let x = 0,

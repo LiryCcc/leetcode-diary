@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import findEvenNumbers from './2094';
-import { generateRandomArray } from './utils';
+import findEvenNumbers from './2094.ts';
+import { generateRandomArray } from './utils.ts';
 
 const solution = (digits: number[]): number[] => {
   const nums = new Set<number>();

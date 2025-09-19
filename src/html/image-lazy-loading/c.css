@@ -1,0 +1,14 @@
+#container > * {
+  width: 100%;
+  text-align: center;
+}
+
+.image-container {
+  flex: 1;
+  background-color: rgb(215 243 243);
+}
+
+.image {
+  min-width: 400px;
+  min-height: 300px;
+}
