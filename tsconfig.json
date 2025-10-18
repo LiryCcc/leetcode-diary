@@ -19,7 +19,6 @@
     "strict": true,
     "strictBindCallApply": true,
     "strictBuiltinIteratorReturn": true,
-    "types": ["node"],
     "jsx": "react-jsx",
     "strictFunctionTypes": true,
     "strictPropertyInitialization": true,
