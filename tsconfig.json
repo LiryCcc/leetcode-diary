@@ -20,6 +20,7 @@
     "strictBindCallApply": true,
     "strictBuiltinIteratorReturn": true,
     "types": ["node"],
+    "jsx": "react-jsx",
     "strictFunctionTypes": true,
     "strictPropertyInitialization": true,
     "alwaysStrict": true,
@@ -30,6 +31,6 @@
     "paths": {},
     "skipLibCheck": true
   },
-  "include": ["src/**/*.ts", "src/**/*.js"],
+  "include": ["src"],
   "exclude": ["node_modules"]
 }
