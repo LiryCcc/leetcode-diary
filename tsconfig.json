@@ -2,7 +2,6 @@
   "compilerOptions": {
     "module": "NodeNext",
     "outDir": "./dist",
-    "rootDir": "./src",
     "target": "ESNext",
     "lib": ["ESNext", "DOM"],
     "moduleResolution": "NodeNext",
@@ -23,13 +22,14 @@
     "strictFunctionTypes": true,
     "strictPropertyInitialization": true,
     "alwaysStrict": true,
+    "erasableSyntaxOnly": true,
     "strictNullChecks": true,
+    "verbatimModuleSyntax": true,
     "sourceMap": true,
-    "baseUrl": "./",
     "allowJs": false,
     "paths": {},
     "skipLibCheck": true
   },
-  "include": ["src"],
+  "include": ["."],
   "exclude": ["node_modules"]
 }
