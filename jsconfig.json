@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
+    "module": "nodenext",
     "target": "ESNext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "nodenext",
     "isolatedModules": true
   },
   "exclude": ["node_modules", "dist"]
