@@ -16,6 +16,7 @@
     "noImplicitThis": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
+    "skipDefaultLibCheck": true,
     "noFallthroughCasesInSwitch": true,
     "moduleDetection": "auto",
     "useDefineForClassFields": true,

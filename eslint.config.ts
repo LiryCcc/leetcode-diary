@@ -24,19 +24,11 @@ const eslintConfig = defineConfig([
           prefer: 'type-imports'
         }
       ]
-    }
-  },
-
-  {
+    },
     files: ['**/*.{js,mjs,cjs,ts}'],
-    plugins: { js },
-    extends: ['js/recommended']
-  },
-  {
-    files: ['**/*.{js,mjs,cjs,ts}'],
+    extends: [js.configs.recommended, tseslint.configs.recommended],
     languageOptions: { globals: globals.browser }
-  },
-  tseslint.configs.recommended
+  }
 ]);
 
 export default eslintConfig;
